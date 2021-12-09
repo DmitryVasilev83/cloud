@@ -1,0 +1,9 @@
+1. Варнинг Javafx
+WARNING: Loading FXML document with JavaFX API of version 11.0.1 by JavaFX runtime of version 8.0.202-ea
+
+2. как указать в пути к файлу диск. Почему в TreeView по пути treeView.setRoot(getNodesForDirectory(new File("D:\Programming")));
+ дерево строится , а по пути 
+treeView.setRoot(getNodesForDirectory(new File("D:")));
+выдает только папки внутри проекта
+
+3. Callback
