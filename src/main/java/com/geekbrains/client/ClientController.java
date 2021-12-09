@@ -108,7 +108,7 @@ public class ClientController implements Initializable {
 
     private void fillServerFileView(){                   //  Отображаем каталог файлов сервера в окне
 
-//        treeViewServer.setRoot(getNodesForDirectory(new File("server")));
+        treeViewServer.setRoot(getNodesForDirectory(new File("server")));
 
         net.sendMessage(new Message(null, "#serverFileView", null, 0, LocalDateTime.now(),
                 null));
@@ -135,15 +135,10 @@ public class ClientController implements Initializable {
         buf = new byte[8192];
         clientDir = Paths.get("client");
 
-        try {
-            fillFileView();
-            fillClientFileView();
+        //fillFileView();
+        fillClientFileView();
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        initClickListener();
+        //initClickListener();
         initClickListener2();
         net = new NettyNet(System.out::println);
 

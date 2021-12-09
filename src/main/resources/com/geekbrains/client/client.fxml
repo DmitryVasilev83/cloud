@@ -13,17 +13,17 @@
         </Menu>
     </MenuBar>
     <AnchorPane prefHeight="375.0" prefWidth="464.0" VBox.vgrow="ALWAYS">
-        <ListView fx:id="listView" prefHeight="53.0" prefWidth="340.0" />
+        
         <TextField fx:id="input" layoutY="368.0" onAction="#sendMsg" prefHeight="39.0" prefWidth="264.0" />
       <Button layoutX="340.0" layoutY="26.0" mnemonicParsing="false" onAction="#clickButtonUpload" prefHeight="40.0" prefWidth="120.0" text="Upload" />
       <Button layoutX="340.0" layoutY="108.0" mnemonicParsing="false" onAction="#clickButtonDownload" prefHeight="40.0" prefWidth="120.0" text="Download" />
       <Button layoutX="340.0" layoutY="184.0" mnemonicParsing="false" onAction="#clickButtonDelete" prefHeight="40.0" prefWidth="120.0" text="Delete" />
       <Button layoutX="340.0" layoutY="256.0" mnemonicParsing="false" onAction="#clickButtonRename" prefHeight="40.0" prefWidth="120.0" text="Rename" />
-      <TreeView fx:id="treeViewClient" layoutY="257.0" prefHeight="110.0" prefWidth="340.0" />
-      <TreeView fx:id="treeViewServer" layoutY="98.0" prefHeight="132.0" prefWidth="340.0" />
-      <Label layoutX="8.0" layoutY="239.0" prefHeight="18.0" prefWidth="79.0" text="Client" />
-      <Label layoutX="6.0" layoutY="58.0" prefHeight="18.0" prefWidth="87.0" text="Server" />
-      <Button layoutX="104.0" layoutY="63.0" mnemonicParsing="false" onAction="#clickButtonUpdateFiles" text="Update" />
+      <TreeView fx:id="treeViewClient" layoutY="221.0" prefHeight="146.0" prefWidth="340.0" />
+      <TreeView fx:id="treeViewServer" layoutY="44.0" prefHeight="146.0" prefWidth="340.0" />
+      <Label layoutX="8.0" layoutY="194.0" prefHeight="18.0" prefWidth="79.0" text="Client" />
+      <Label layoutX="8.0" layoutY="16.0" prefHeight="18.0" prefWidth="87.0" text="Server" />
+      <Button layoutX="114.0" layoutY="13.0" mnemonicParsing="false" onAction="#clickButtonUpdateFiles" text="Update" />
 
 
     </AnchorPane>
