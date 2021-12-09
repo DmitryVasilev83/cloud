@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="434.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.geekbrains.client.ClientController">
+    <MenuBar VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="Quit" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+        </Menu>
+    </MenuBar>
+    <AnchorPane prefHeight="375.0" prefWidth="464.0" VBox.vgrow="ALWAYS">
+        <ListView fx:id="listView" prefHeight="53.0" prefWidth="340.0" />
+        <TextField fx:id="input" layoutY="368.0" onAction="#sendMsg" prefHeight="39.0" prefWidth="264.0" />
+      <Button layoutX="340.0" layoutY="26.0" mnemonicParsing="false" onAction="#clickButtonUpload" prefHeight="40.0" prefWidth="120.0" text="Upload" />
+      <Button layoutX="340.0" layoutY="108.0" mnemonicParsing="false" onAction="#clickButtonDownload" prefHeight="40.0" prefWidth="120.0" text="Download" />
+      <Button layoutX="340.0" layoutY="184.0" mnemonicParsing="false" onAction="#clickButtonDelete" prefHeight="40.0" prefWidth="120.0" text="Delete" />
+      <Button layoutX="340.0" layoutY="256.0" mnemonicParsing="false" onAction="#clickButtonRename" prefHeight="40.0" prefWidth="120.0" text="Rename" />
+      <TreeView fx:id="treeViewClient" layoutY="257.0" prefHeight="110.0" prefWidth="340.0" />
+      <TreeView fx:id="treeViewServer" layoutY="98.0" prefHeight="132.0" prefWidth="340.0" />
+      <Label layoutX="8.0" layoutY="239.0" prefHeight="18.0" prefWidth="79.0" text="Client" />
+      <Label layoutX="6.0" layoutY="58.0" prefHeight="18.0" prefWidth="87.0" text="Server" />
+      <Button layoutX="104.0" layoutY="63.0" mnemonicParsing="false" onAction="#clickButtonUpdateFiles" text="Update" />
+
+
+    </AnchorPane>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+   <ListView prefHeight="200.0" prefWidth="200.0" />
+</VBox>
